@@ -1,2 +1,2 @@
 # Ribber
-Self-destruction app
+Self-destructing message app
