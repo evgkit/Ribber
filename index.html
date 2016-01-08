@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Ribber</title>
     <link href="bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" media="screen">
+    <link href="bower_components/bootstrap/dist/css/bootstrap-theme.min.css" rel="stylesheet" media="screen">
+    <link href="css/application.css" rel="stylesheet" media="screen">
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -15,32 +17,88 @@
     <![endif]-->
 </head>
 <body>
-<div class="container">
-    <header class="page-header">
-        <ul class="nav nav-pills pull-right">
-            <li class="active"><a href="#">Home</a></li>
-            <li><a href="#">About Ribber</a></li>
-            <li><a href="#">Drop Resource</a></li>
-        </ul>
-        <h3>Ribber</h3>
-    </header>
 
+<div class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+        </button>
+
+        <a class="navbar-brand text-muted" href="#">Ribber</a>
+        <div class="collapse navbar-collapse">
+            <ul class="nav navbar-nav navbar-right">
+                <li class="active"><a href="#">Home</a></li>
+                <li><a href="#">About Ribber</a></li>
+                <li><a href="#">Drop Resource</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<div class="container">
     <div class="jumbotron">
         <h1>Self-destructing message app</h1>
 
         <p class="lead">Drinking vinegar mustache before they sold out, cliche hoodie biodiesel flexitarian
-            farm-to-table.! Tumblr leggings vice, drinking vinegar lomo tote bag iPhone plaid small batch scenester
-            green juice tofu bespoke polaroid squid.!</p>
+            farm-to-table! Tumblr leggings vice, drinking vinegar lomo tote bag iPhone plaid small batch scenester
+            green juice tofu bespoke polaroid squid!</p>
 
         <p class="btn-group">
             <a class="btn btn-success btn-lg" href="#">Download the app</a>
-            <a class="btn btn-default btn-lg" href="#">Text me the link</a>
+            <a class="btn btn-default btn-lg hidden-xs" href="#">Text me the link</a>
         </p>
     </div>
 
+    <div class="row">
+        <div class="col-sm-4">
+            <h2>Delete photo &amp; video based on a timer</h2>
+            <p>Learn how to write the code that downloads and displays messages, photos, and videos that timeout after a few seconds. Then create the code that deletes them from the back-end to make them "self destruct."</p>
+        </div>
+
+        <div class="col-sm-4">
+            <h2>Build an easily managed friends list</h2>
+            <p>Learn what Parse.com offers as a "backend-as-a-service" platform. Explore the user account management APIs provided by Parse.com and write the code to create and save a new user in a Parse.com data store.</p>
+        </div>
+
+        <div class="col-sm-4">
+            <h2>Store &amp; retrieve data using cloud servers</h2>
+            <p>We'll teach you how to upload images, video files, and messages to Parse.com's cloud servers. Then learn how to retrieve the data by setting up custom queries that download and display them in the app.</p>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-sm-6 hidden-xs">
+            <h3>Learn how to make this app</h3>
+            <p>We will build on the concepts learned in previous iOS projects to create an app that will allow users to send photo or video messages to other users that will be deleted once viewed.</p>
+
+            <div class="row">
+                <div class="col-sm-6 col-md-push-6">
+                    <img class="img-responsive" src="img/thumb.jpg">
+                </div>
+                <div class="col-sm-6 col-md-pull-6">
+                    <p>Get iPhone plaid small batch scenester for only $24 a month!</p>
+                    <a href="#">Visit Drop Resource Now &raquo;</a>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="col-sm-6">
+            <h3>About Drop Resource</h3>
+            <p>MMeditation gochujang fashion axe franzen single-origin coffee, forage affogato kombucha normcore you probably haven't heard of them pug mlkshk lumbersexual scenester.</p>
+            <a href="#">Sign up for Drop Resource &raquo;</a>
+        </div>
+    </div>
+
+    <hr>
     <div>
         <p>&copy; 2013 Ribber - By Drop Resource, Inc.</p>
     </div>
+
+    <script src="bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
 </div>
 </body>
 </html>
