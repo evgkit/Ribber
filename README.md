@@ -1,0 +1,2 @@
+# Ribber
+Self-destruction app
