@@ -5,8 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Ribber</title>
-    <link href="bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" media="screen">
-    <link href="bower_components/bootstrap/dist/css/bootstrap-theme.min.css" rel="stylesheet" media="screen">
+    <link href="css/bootstrap.css" rel="stylesheet">
     <link href="css/application.css" rel="stylesheet" media="screen">
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
@@ -18,158 +17,95 @@
 </head>
 <body>
 
-<div class="navbar navbar-inverse navbar-fixed-top">
-    <div class="container">
-        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-        </button>
-
-        <a class="navbar-brand text-muted" href="#">Ribber</a>
-
-        <div class="collapse navbar-collapse">
-            <ul class="nav navbar-nav navbar-right">
-                <li class="active"><a href="#">Home</a></li>
-                <li><a href="#">About Ribber</a></li>
-                <li class="dropdown">
-                    <a data-toggle="dropdown" data-target="#">Drop Resource<b class="caret"></b></a>
-                    <ul class="dropdown-menu">
-                        <li><a href="#">About Drop Resorce</a></li>
-                        <li><a href="#">Video Library</a></li>
-                        <li><a href="#">Learning Adventures</a></li>
-                        <li class="divider"></li>
-                        <li><a href="#">Plans &amp; Pricing</a></li>
-                    </ul>
-                </li>
-            </ul>
+    <!--Navbar -->
+    <div class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+            <a class="main-logo pull-left" href="#">Ribber</a>
+            <p class="navbar-text pull-right hidden-xs">A DropResource Project</p>
         </div>
     </div>
-</div>
+    <!-- End navbar -->
 
-<div id="myCarousel" class="carousel slide jumbotron">
-    <div class="container">
-        <ol class="carousel-indicators">
-            <li class="active" data-target="#myCarousel" data-slide-to="0"></li>
-            <li data-target="#myCarousel" data-slide-to="1"></li>
-            <li data-target="#myCarousel" data-slide-to="2"></li>
-        </ol>
-        <div class="carousel-inner">
-            <div class="item active">
-                <h1>Self-destructing message app</h1>
-
-                <p class="lead">Drinking vinegar mustache before they sold out, cliche hoodie biodiesel flexitarian
-                    farm-to-table! Tumblr leggings vice, drinking vinegar lomo tote bag iPhone plaid small batch scenester
-                    green juice tofu bespoke polaroid squid!</p>
-
-                <p class="btn-group">
-                    <a class="btn btn-success btn-lg" href="#">Download the app</a>
-                    <a class="btn btn-default btn-lg hidden-xs" data-toggle="modal" href="#textModal">Text me the link</a>
-                </p>
-            </div>
-            <div class="item">
-                <h1>Learn how to build it for iOS</h1>
-                <p class="lead">American batch beard belly cray denim helvetica hoodie iphone irony jean shorts keytar kogi master pork post-ironic rights squid sriracha synth tattooed terry thundercats viral wolf you probably haven't heard of them.</p>
-                <p>
-                    <a class="btn btn-success btn-lg" href="#">Get started today!</a>
-                </p>
-            </div>
-            <div class="item">
-                <h1>Learn how to build it for Android</h1>
-                <p class="lead">All of a sudden go crazy attack feet behind the couch burrow under covers claw drapes climb! Behind the couch chew ipad power cord find something else more interesting flop over burrow under covers chew ipad power cord!</p>
-                <p>
-                    <a class="btn btn-success btn-lg" href="#">Get started today!</a>
-                </p>
-            </div>
-        </div>
-    </div>
-    <a class="left carousel-control" href="#myCarousel" data-slide="prev">
-        <span class="icon-prev"></span>
-    </a>
-    <a class="right carousel-control" href="#myCarousel" data-slide="next">
-        <span class="icon-next"></span>
-    </a>
-</div>
-
-<div class="modal fade" id="textModal">
-    <div class="modal-dialog">
-        <div class="modal-content">
-            <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                <h4 class="modal-title">We'll Text You the Link!</h4>
-            </div>
-            <div class="modal-body">
-                <form class="form-inline">
-                    <div class="form-group">
-                        <label class="sr-only" for="mobilePhone">Mobile Phone</label>
-                        <input type="tel" class="form-control" id="mobilePhone" placeholder="Mobile Phone">
-                    </div>
-                    <div class="form-group">
-                        <label class="sr-only" for="osSelection">Operating System</label>
-                        <select class="form-control" id="osSelection">
-                            <option>iOS</option>
-                            <option>Android</option>
-                        </select>
-                    </div>
-                    <button type="submit" class="btn btn-primary" data-dismiss="modal">Send me link</button>
-                </form>
-            </div>
-        </div>
-    </div>
-</div>
-
-<div class="container">
-    <div class="row">
-        <div class="col-sm-4">
-            <b class="glyphicon glyphicon-scissors"></b>
-            <h2>Delete photo &amp; video based on a timer</h2>
-            <p>Learn how to write the code that downloads and displays messages, photos, and videos that timeout after a few seconds. Then create the code that deletes them from the back-end to make them "self destruct."</p>
-        </div>
-
-        <div class="col-sm-4">
-            <b class="glyphicon glyphicon-rub"></b>
-            <h2>Build an easily managed friends list</h2>
-            <p>Learn what Parse.com offers as a "backend-as-a-service" platform. Explore the user account management APIs provided by Parse.com and write the code to create and save a new user in a Parse.com data store.</p>
-        </div>
-
-        <div class="col-sm-4">
-            <b class="glyphicon glyphicon-sunglasses"></b>
-            <h2>Store &amp; retrieve data using cloud servers</h2>
-            <p>We'll teach you how to upload images, video files, and messages to Parse.com's cloud servers. Then learn how to retrieve the data by setting up custom queries that download and display them in the app.</p>
-        </div>
-    </div>
-
-    <div class="row">
-        <div class="col-sm-6 hidden-xs">
-            <h3>Learn how to make this app</h3>
-            <p>We will build on the concepts learned in previous iOS projects to create an app that will allow users to send photo or video messages to other users that will be deleted once viewed.</p>
-
+    <!-- Jumbotron -->
+    <div class="jumbotron">
+        <div class="container">
             <div class="row">
-                <div class="col-sm-6 col-md-push-6">
-                    <img class="img-responsive" src="img/thumb.jpg">
+                <div class="col-sm-6">
+                    <h1>Self-destructing messages are only a hop away.</h1>
+                    <p class="lead">Butcher hammock bitters, kombucha helvetica hashtag etsy cliche tacos narwhal.</p>
+                    <p class="lead">Or download the app and try it first.</p>
+                    <p class="lead">
+                        <a class="btn btn-default btn-lg" href="#">iOS</a>
+                        <a class="btn btn-default btn-lg" href="#">Android</a>
+                    </p>
                 </div>
-                <div class="col-sm-6 col-md-pull-6">
-                    <p>Get iPhone plaid small batch scenester for only $24 a month!</p>
-                    <a href="#">Visit Drop Resource Now &raquo;</a>
+
+                <div class="col-sm-6 hidden-xs">
+                    <div class="device pull-right"></div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- End Jumbotron -->
+
+    <!-- Main Content -->
+    <div class="container">
+
+        <div class="row ft">
+            <div class="col-sm-6 hidden-xs">
+                <div class="ft-icon camera img-rounded"></div>
+            </div>
+            <div class="col-sm-6 ft-copy">
+                <h2>Securely delete photos &amp; video based on a timer</h2>
+                <p>8-bit waistcoat mumblecore dreamcatcher try-hard williamsburg ennui, hashtag pop-up helvetica kale chips pour-over lumbersexual godard yuccie. Twee bicycle rights knausgaard, bushwick pop-up mlkshk XOXO hoodie plaid. </p>
+            </div>
+        </div>
+
+        <div class="row ft">
+            <div class="col-sm-6 ft-copy">
+                <h2>Build an easily managed friends list</h2>
+                <p>Flannel green juice street art, pinterest normcore whatever umami chicharrones. Photo booth kitsch shoreditch four dollar toast green juice disrupt master cleanse polaroid vice, church-key scenester. </p>
+            </div>
+            <div class="col-sm-6 hidden-xs">
+                <div class="ft-icon friends img-rounded"></div>
+            </div>
+        </div>
+
+        <div class="row ft">
+            <div class="col-sm-6 hidden-xs">
+                <div class="ft-icon cloud img-rounded"></div>
+            </div>
+            <div class="col-sm-6 ft-copy">
+                <h2>Store &amp; retrieve data using cloud servers</h2>
+                <p>Bespoke schlitz irony plaid. Celiac gentrify echo park church-key, affogato biodiesel farm-to-table pabst scenester kogi single-origin coffee.</p>
+            </div>
+        </div>
+
+        <!-- Panel -->
+        <div class="panel panel-default hidden-xs">
+            <div class="row">
+                <div class="col-sm-5 col-sm-offset-1">
+                    <form>
+                        <p><strong>Enter your number and we'll text you a link</strong></p>
+                        <label class="sr-only">Phone Number</label>
+                        <input class="form-control phone-txt" type="text" placeholder="Phone Number">
+                        <button class="btn btn-submit" type="submit">
+                            <span class="glyphicon glyphicon-arrow-right"></span>
+                        </button>
+                    </form>
+                </div>
+                <div class="col-sm-5">
+                    <p><strong>Or visit an app store to download now!</strong></p>
+                    <a class="btn btn-default btn-lg" href="#">iOS</a>
+                    <a class="btn btn-default btn-lg" href="#">Android</a>
                 </div>
             </div>
+        </div><!-- End panel -->
 
-        </div>
-
-        <div class="col-sm-6">
-            <h3>About Drop Resource</h3>
-            <p>MMeditation gochujang fashion axe franzen single-origin coffee, forage affogato kombucha normcore you probably haven't heard of them pug mlkshk lumbersexual scenester.</p>
-            <a href="#">Sign up for Drop Resource &raquo;</a>
-        </div>
-    </div>
-
-    <hr>
-    <div>
-        <p>&copy; 2015 Ribber - By Drop Resource, Inc.</p>
-    </div>
+    </div><!-- End Main Content -->
 
     <script src="bower_components/jquery/dist/jquery.min.js"></script>
     <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
-</div>
 </body>
 </html>
