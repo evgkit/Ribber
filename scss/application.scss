@@ -2,6 +2,21 @@
 /* Typography
 ================================= */
 
+@font-face {
+  font-family: 'icomoon';
+  src:url('../fonts/icomoon.eot');
+  src:url('../fonts/icomoon.eot?#iefix') format('embedded-opentype'),
+      url('../fonts/icomoon.woff') format('woff'),
+      url('../fonts/icomoon.ttf') format('truetype'),
+      url('../fonts/icomoon.svg#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  color: #b3aeb5;
+}
+
 h1 {
   font-weight: 200;
   margin-bottom: 30px;
@@ -27,13 +42,24 @@ strong {
 }
 
 .navbar {
+  min-height: 80px;
+
+  &-default {
+    background-color: rgba(47, 42, 49, 0.9);
+    border-color: rgba(30, 27, 31, 0.9);
+  }
+
+  &-fixed-top {
+    z-index: 1030;
+  }
+
   @media (max-width: 767px) {
       min-height: 60px;
   }
 
   &-text {
     font-weight: bold;
-    margin-right: 0;
+    margin: 30px 0 30px;
   }
 }
 
@@ -51,8 +77,52 @@ strong {
   }
 }
 
+.main-footer {
+  margin: 100px 0 80px 0;
+  font-size: .95em;
+
+  @media (max-width: 767px) {
+    margin-top: 65px;
+  }
+
+  a {
+    color: #a6afb2;
+  }
+}
+
+.link-list {
+  list-style-type: none;
+  line-height: 1.8;
+  margin: 0;
+  padding: 0;
+
+  @media (max-width: 767px) {
+    float: left;
+    margin-top: 30px;
+    margin-right: 30px;
+  }
+
+  .heading {
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+}
+
+.copyright {
+  opacity: .8;
+  font-size: .9em;
+}
+
 /* Layout
 ================================= */
+
+hr {
+  margin-bottom: 60px;
+
+  @media (max-width: 767px) {
+    margin-bottom: 40px;
+  }
+}
 
 .ft {
   margin-bottom: 75px;
@@ -63,6 +133,11 @@ strong {
 
   &-copy {
     padding-top: 35px;
+
+    p,
+    .copy-offset {
+      width: 90%;
+    }
 
     @media (max-width: 991px) {
       padding-top: 12px;
@@ -90,12 +165,40 @@ strong {
   }
 }
 
+.callout {
+  padding: 35px 0;
+  margin-top: 65px;
+  text-align: center;
+  border: 1px solid #e3e3e3;
+  border-right: none;
+  border-left: none;
+
+  @media (max-width: 767px) {
+    margin-top: 30px;
+  }
+
+  .glyphicon {
+    margin-left: 10px;
+  }
+}
+
+.person-desc {
+  strong {
+    display: block;
+  }
+}
+
+.th-copy {
+  padding-top: 30px;
+}
+
+
 /* Jumbotron
 ================================= */
 
 .jumbotron {
   background: #2b669a url('../img/main-bg.png') no-repeat 200% 100%;
-  padding: 200px 0 140px 0;
+  padding: 200px 0 205px 0;
   margin-bottom: 70px;
 
   @media (max-width: 991px) {
@@ -114,6 +217,10 @@ strong {
   width: 345px;
   height: 590px;
   background: url('../img/device-hero.png') no-repeat;
+
+  @media (max-width: 991px) {
+    margin-top: 30px;
+  }
 }
 
 /* Form
@@ -137,6 +244,19 @@ strong {
 /* Buttons
 ================================= */
 
+.btn-success {
+  box-shadow: 0 3px 0 #23812f;
+  text-shadow: 0 1px 1px rgba(0,0,0,.3);
+  font-size: 1.5em;
+  width: 330px;
+  padding: 15px 0;
+
+  @media (max-width: 767px) {
+    width: 85%;
+    font-size: initial;
+  }
+}
+
 .btn-default {
   border: 2px inherit;
   margin-right: 10px;
@@ -157,6 +277,19 @@ strong {
 
 /* Logos & Icons
 ================================= */
+
+[data-icon]::before {
+  font-family: 'icomoon', serif;
+  content: attr(data-icon);
+  margin-right: 8px;
+  speak: none;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
 
 .main-logo {
   width: 125px;
@@ -195,31 +328,42 @@ strong {
     background: url('../img/feature-icons.png') no-repeat;
     background-size: 100%;
   }
-}
 
-.camera {
-  background-position: 270px -180px;
+  .camera {
+    background-position: 270px -180px;
 
-  &::before {
-    background-position: 0 0;
+    &::before {
+      background-position: 0 0;
+    }
+  }
+
+  .friends {
+    background-position: -500px 0;
+
+    &::before {
+      background-position: 0 -105px;
+    }
+  }
+
+  .cloud {
+    background-position: 260px 0;
+
+    &::before {
+      background-position: 0 -210px;
+    }
   }
 }
 
-.friends {
-  background-position: -500px 0;
+.long-logo {
+  margin-bottom: 15px;
 
-  &::before {
-    background-position: 0 -105px;
+  @media (max-width: 767px) {
+    width: 300px;
   }
+
 }
 
-.cloud {
-  background-position: 260px 0;
 
-  &::before {
-    background-position: 0 -210px;
-  }
-}
 
 
 

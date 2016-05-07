@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Ribber</title>
-    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="css/application.css" rel="stylesheet" media="screen">
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
@@ -35,8 +35,8 @@
                     <p class="lead">Butcher hammock bitters, kombucha helvetica hashtag etsy cliche tacos narwhal.</p>
                     <p class="lead">Or download the app and try it first.</p>
                     <p class="lead">
-                        <a class="btn btn-default btn-lg" href="#">iOS</a>
-                        <a class="btn btn-default btn-lg" href="#">Android</a>
+                        <a class="btn btn-default btn-lg" href="#" data-icon="&#xe000;">iOS</a>
+                        <a class="btn btn-default btn-lg" href="#" data-icon="&#xe001;">Android</a>
                     </p>
                 </div>
 
@@ -97,13 +97,109 @@
                 </div>
                 <div class="col-sm-5">
                     <p><strong>Or visit an app store to download now!</strong></p>
-                    <a class="btn btn-default btn-lg" href="#">iOS</a>
-                    <a class="btn btn-default btn-lg" href="#">Android</a>
+                    <a class="btn btn-default btn-lg" href="#" data-icon="&#xe000;">iOS</a>
+                    <a class="btn btn-default btn-lg" href="#" data-icon="&#xe001;">Android</a>
                 </div>
             </div>
         </div><!-- End panel -->
 
+        <!-- Extra Content -->
+        <div class="row">
+            <div class="col-sm-6 hidden-xs">
+                <h3>Church-key banjo bespoke gochujang pinterest.</h3>
+                <p>Farm-to-table neutra portland, aesthetic gochujang meh marfa mustache food truck yr post-ironic banjo scenester mumblecore trust fund. Selvage slow-carb beard man bun meh gochujang kale chips, 90's fashion axe 3 wolf moon pug pop-up williamsburg sriracha.</p>
+
+                <div class="row th-copy">
+                    <div class="col-sm-6">
+                        <a data-toggle="modal" href="#videoModal">
+                            <img class="img-responsive img-rounded" src="img/thumb.jpg" alt="">
+                        </a>
+                    </div>
+
+                    <div class="col-sm-5">
+                        <p><em>Get access to stuff for only $24 a month!</em></p>
+                        <a href="#">Visit DropResorce &raquo;</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-6">
+                <img class="long-logo img-responsive img-rounded" src="img/long-logo.png" alt="logo">
+                <p>Occupy slow-carb fashion axe heirloom readymade synth. Celiac master cleanse four dollar toast, occupy wayfarers squid heirloom food truck gochujang keytar. </p>
+
+                <div class="row hidden-xs th-copy">
+                    <div class="col-sm-4">
+                        <img class="img-responsive img-circle" src="img/octocat.jpg">
+                    </div>
+
+                    <div class="col-sm-6">
+                        <p class="person-desc th-copy">
+                            <strong>Cat Octo</strong>
+                            <span>CEO</span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div><!-- End Extra Content -->
+
+        <div class="callout">
+            <a href="#" class="btn btn-success btn-lg">Sign up for DropResource<span class="glyphicon glyphicon-arrow-right"></span></a>
+        </div>
+
+        <!-- Footer -->
+        <footer class="main-footer">
+            <div class="row">
+                <div class="col-sm-4">
+                    <img class="long-logo img-responsive img-rounded" src="img/long-logo.png" alt="logo">
+                    <p>Tumblr microdosing bicycle rights tousled, typewriter chillwave brooklyn forage synth bespoke wolf pitchfork authentic fixie scenester.</p>
+                    <p class="copyright">&copy; 2016 DropResource, Inc.</p>
+                </div>
+
+                <div class="col-sm-2 col-sm-offset-1 col-md-offset-2">
+                    <ul class="link-list">
+                        <li class="heading"><a href="#">Start jumping free &rarr;</a></li>
+                        <li><a href="#">About DropResource</a></li>
+                        <li><a href="#">DropResource Blog</a></li>
+                        <li><a href="#">DropResource Shop</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms &amp; Conditions</a></li>
+                    </ul>
+                </div>
+                <div class="col-sm-2">
+                    <ul class="link-list">
+                        <li class="heading"><a href="#">Browse our works &rarr;</a></li>
+                        <li><a href="#">Website Design</a></li>
+                        <li><a href="#">Web Programming</a></li>
+                        <li><a href="#">iOS Development</a></li>
+                        <li><a href="#">Android Development</a></li>
+                    </ul>
+                </div>
+                <div class="col-sm-2">
+                    <ul class="link-list">
+                        <li class="heading"><a href="#">Get in touch &rarr;</a></li>
+                        <li><a href="mailto:hi@dropresource.com">hi@dropresource.com</a></li>
+                        <li>1(888)555-1234</li>
+                    </ul>
+                </div>
+            </div>
+        </footer><!-- End footer -->
     </div><!-- End Main Content -->
+
+    <!-- Video Modal -->
+    <div class="modal fade" id="videoModal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                    <h4 class="modal-title">Check it out, dude!</h4>
+                </div>
+                <div class="modal-body">
+                    <iframe width="100%" height="300" src="https://youtube.com/embed/0fKBhvDjuy0" frameborder="0"></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Video Modal -->
 
     <script src="bower_components/jquery/dist/jquery.min.js"></script>
     <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
